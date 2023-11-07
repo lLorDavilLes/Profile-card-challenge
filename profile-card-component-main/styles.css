@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Darkcyan: hsl(185, 75%, 39%);
+    --Verydarkdesaturatedblue: hsl(229, 23%, 23%);
+    --Darkgrayishblue: hsl(227, 10%, 46%);
+    --Darkgray: hsl(0, 0%, 59%);
+    --White: rgb(255, 255, 255);
+    --ShadowColor: rgba(22, 21, 21, 0.112);
+}
+
+body{
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 52vw bottom 35vh, left 48vw top 52vh;font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--Darkcyan);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.main-container{
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--White);
+    box-shadow: 1rem 1rem 1rem 0.5rem var(--ShadowColor);
+
+}
+
+.section-1 img{
+    border-radius: 1rem 1rem 0 0;
+}
+
+.section-2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    height: 10rem;
+}
+
+.section-2 img{
+    margin-top: -50px;
+    border-radius: 4rem;
+    border: solid 5px var(--White);
+}
+
+
+.section-2 div{
+    display: flex;
+    gap: 0.5rem;
+}
+
+
+
+.section-2 p {
+    color: var(--Darkgray);
+    font-size: 1rem;
+} 
+
+
+.section-2 span{
+    font-size: 0.8rem;
+}
+
+h1{
+    font-size: 1rem;
+}
+
+hr{
+    border: solid 1px rgb(232, 228, 228);
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+li{
+    color: var(--Darkgrayishblue);
+    font-weight: bold;
+}
+
+span{
+    font-size: 0.6rem;
+    color: var(--Darkgray);
+}
